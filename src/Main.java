@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         task1();
-//        task2();
+        task2();
     }
 
     public static void task1 () {
@@ -23,8 +23,34 @@ public class Main {
 
     }
 
-//    public static void task2 () {
-//        System.out.println("Задача 2");
-////        ... // Пишем код для задачи 2
-//    }
+    public static void task2 () {
+        System.out.println("Задача 2");
+//        Ниже дан список различных значений. Инициализируйте переменные, используйте
+//        изученные ранее типы переменных.
+//Значения:
+//27.12
+//987 678 965 549
+//2.786
+//569
+//-159
+//27897
+//67
+        float firstNumber = 27.12F;
+        System.out.println(firstNumber);
+        long secondNumber = 987678965549L;
+        System.out.println(secondNumber);
+        double thirdNumber = 2.786;
+        System.out.println(thirdNumber);
+        short fourthNumber = 569;
+        System.out.println(fourthNumber);
+        short fifthNumber = -159;
+        System.out.println(fifthNumber);
+        short sixthNumber = 27897;
+        System.out.println(sixthNumber);
+        int sixthNumberInt = 27897;
+        System.out.println(sixthNumberInt);
+        byte seventhNumber = 67;
+        System.out.println(seventhNumber);
+
+    }
 }
