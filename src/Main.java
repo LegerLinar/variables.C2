@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1 () {
@@ -68,5 +69,30 @@ public class Main {
         short sheetsForChildren = 480;
         int sheetPerChild = sheetsForChildren / childrenTotal;
         System.out.println("На каждого ученика рассчитано " + sheetPerChild + " листов бумаги");
+    }
+    public static void task4 (){
+        System.out.println("Задача 4");
+//        Производительность машины для изготовления бутылок — 16 бутылок за 2 минуты. Какая производительность машины будет:
+//за 20 минут,
+//в сутки,
+//за 3 дня,
+//за 1 месяц?
+//Рассчитывайте производительность работы машины в том случае, если она работает без перерыва заданный промежуток времени.
+//Результаты подсчетов выведите в консоль в формате: «За … машина произвела … штук бутылок».
+//Для объявления переменных не используйте тип var.
+        byte machineEfficiencyPer2Min = 16;
+        short amount2MinPerDay = 24 * 30;
+
+        int machineEfficiency20Min = machineEfficiencyPer2Min * 10;
+        int machineEfficiencyDaily = machineEfficiencyPer2Min * amount2MinPerDay;
+        int machineEfficiency3Days = machineEfficiencyDaily * 3;
+        int machineEfficiencyMonthly = machineEfficiencyDaily * 30;
+
+        System.out.println("За " + "20 минут" + " машина произвела " + machineEfficiency20Min + " штук бутылок");
+        System.out.println("За " + "сутки" + " машина произвела " + machineEfficiencyDaily + " штук бутылок");
+        System.out.println("За " + "3 дня" + " машина произвела " + machineEfficiency3Days + " штук бутылок");
+        System.out.println("За " + "месяц" + " машина произвела " + machineEfficiencyMonthly + " штук бутылок");
+
+
     }
 }
