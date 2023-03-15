@@ -136,8 +136,8 @@ public class Main {
         byte bananaWeight = 80;
         byte bananaPortion = 5;
         int bananaPortionWeight = bananaPortion * bananaWeight;
-        short milkPortion = 200;
-        byte milkWeight = 100;
+        short milkPortion = 2;
+        byte milkWeight = 105;
         int milkPortionWeight = milkWeight * milkPortion;
         byte iceCreamPortion = 2;
         byte iceCreamWeight = 100;
