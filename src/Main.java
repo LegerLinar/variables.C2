@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1 () {
@@ -94,5 +95,23 @@ public class Main {
         System.out.println("За " + "месяц" + " машина произвела " + machineEfficiencyMonthly + " штук бутылок");
 
 
+    }
+//    На ремонт школы нужно 120 банок краски двух цветов: белой и коричневой. На один класс уходит
+//    2 банки белой и 4 банки
+//    коричневой краски. Сколько банок каждой краски было куплено?
+//Выведите результат задачи в консоль в формате: «В школе, где … классов, нужно … банок белой краски
+// и … банок коричневой краски».
+//Для объявления переменных не используйте тип var.
+    public static void task5 () {
+        System.out.println("Задача 5");
+        short paintTanksTotal = 120;
+        byte whiteTanksPerClass = 2;
+        byte brownTanksPerClass = 4;
+        int tanksPerClass = whiteTanksPerClass + brownTanksPerClass;
+        int classroomAmount = paintTanksTotal / tanksPerClass;
+        int whiteTanksTotal = whiteTanksPerClass * classroomAmount;
+        int brownTanksTotal = brownTanksPerClass * classroomAmount;
+
+        System.out.println("В школе? где " + classroomAmount + " классов, нужно " + whiteTanksTotal + " банок белой краски и " + brownTanksTotal + " банок коричневой краски");
     }
 }
