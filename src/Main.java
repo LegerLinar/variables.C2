@@ -168,7 +168,7 @@ public class Main {
 
         int expectedGoalReachWorst = weightLossGoalGram / weightLossDailyMin;
         int expectedGoalReachBest = weightLossGoalGram / weightLossDailyMax;
-        int expectedGoalReachMid = weightLossGoalGram / weightLossDailyMid;
+        float expectedGoalReachMid = (float) weightLossGoalGram / weightLossDailyMid;
 
         System.out.println("Спортсмен избавится от 7 кг в течение " + expectedGoalReachBest + " дней в лучшем случае");
         System.out.println("Спортсмен избавится от 7 кг в течение " + expectedGoalReachWorst + " дней в худшем случае");
