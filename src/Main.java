@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1 () {
@@ -113,5 +114,40 @@ public class Main {
         int brownTanksTotal = brownTanksPerClass * classroomAmount;
 
         System.out.println("В школе? где " + classroomAmount + " классов, нужно " + whiteTanksTotal + " банок белой краски и " + brownTanksTotal + " банок коричневой краски");
+    }
+//    Спортсмены следят за своим весом и тщательно относятся к тому, что и сколько они съедают.
+//Вот один из рецептов, по которому спортсмен готовит себе завтрак:
+//Бананы — 5 штук (1 банан — 80 грамм).
+//Молоко — 200 мл (100 мл = 105 грамм).
+//Мороженое-пломбир — 2 брикета по 100 грамм.
+//Яйца сырые – 4 яйца (1 яйцо — 70 грамм).
+//Смешать всё в блендере — и готово.
+//Подсчитайте вес (количество граммов) такого спортзавтрака, а затем переведите его в килограммы.
+//Результат в граммах и килограммах напечатайте в консоль.
+//Важное условие: если в рецепт нужно добавить несколько единиц какого-то продукта
+// (с определенным весом), то нужно умножать количество единиц на вес в граммах.
+// Например, если в рецепте указано, что нужно добавить 5 бананов по 80 грамм, то нужно
+// количество бананов (5) умножить на вес одного (80 грамм), а не считать самим общую сумму граммов.
+    public static void task6 () {
+        System.out.println("Задача 6");
+
+        byte bananaWeight = 80;
+        byte bananaPortion = 5;
+        int bananaPortionWeight = bananaPortion * bananaWeight;
+        short milkPortion = 200;
+        byte milkWeight = 100;
+        int milkPortionWeight = milkWeight * milkPortion;
+        byte iceCreamPortion = 2;
+        byte iceCreamWeight = 100;
+        int iceCreamPortionWeight = iceCreamWeight * iceCreamPortion;
+        byte eggsPortion = 4;
+        byte eggsWeight = 70;
+        int eggsPortionWeight = eggsWeight * eggsPortion;
+        int breakfastWeight = bananaPortionWeight + milkPortionWeight + iceCreamPortionWeight + eggsPortionWeight;
+        System.out.println("Вес завтрака в граммах " + breakfastWeight);
+        float kilo = 1000;
+        float breakfastWeightKilo = breakfastWeight / kilo;
+        System.out.println("Вес завтрака в килограммах " + breakfastWeightKilo);
+
     }
 }
