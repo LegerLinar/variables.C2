@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1 () {
@@ -172,5 +173,57 @@ public class Main {
         System.out.println("Спортсмен избавится от 7 кг в течение " + expectedGoalReachBest + " дней в лучшем случае");
         System.out.println("Спортсмен избавится от 7 кг в течение " + expectedGoalReachWorst + " дней в худшем случае");
         System.out.println("Спортсмен избавится от 7 кг в течение " + expectedGoalReachMid + " дней при усредненных расчетах");
+    }
+
+//Задача 8
+//Представим, что мы работаем в большой компании, штат которой состоит из нескольких сотен сотрудников.
+// В компании есть правило: чем дольше сотрудник работает в компании, тем ценнее он для бизнеса. Поэтому сотрудники,
+// которые работают в компании дольше 3 лет, получают повышение зарплаты раз в год.
+// Каждый год повышение составляет 10% от текущей зарплаты.
+//К вам пришел руководитель с задачей автоматизировать повышение зарплаты, а также провести расчет для следующих сотрудников:
+//Маша получает 67 760 рублей в месяц.
+//Денис получает 83 690 рублей в месяц.
+//Кристина получает 76 230 рублей в месяц.
+//Каждому нужно увеличить зарплату на 10% от текущей месячной. Дополнительно руководитель попросил посчитать
+// разницу между годовым доходом с нынешней зарплатой и после повышения.
+//Посчитайте, сколько будет получать каждый из сотрудников, а также разницу между годовым доходом до и после повышения.
+//Выведите в консоль информацию по каждому сотруднику. Например: «Маша теперь получает ... рублей. Годовой доход вырос на ... рублей».
+    public static void task8(){
+        System.out.println("Задача 8");
+
+        float salaryMaria = 67760;
+        float salaryDenis = 83690;
+        float salaryKristina = 76230;
+
+        float salaryMariaDif = salaryMaria / 100;
+        float salaryDenisDif = salaryDenis / 100;
+        float salaryKristinaDif = salaryKristina / 100;
+
+        float salaryMariaNew = salaryMaria + salaryMariaDif * 10;
+        float salaryDenisNew = salaryDenis + salaryDenisDif * 10;
+        float salaryKristinaNew = salaryKristina + salaryKristinaDif * 10;
+
+        System.out.println("Новая зарплата Марии составляет " + salaryMariaNew + " руб.");
+        System.out.println("Новая зарплата Дениса составляет " + salaryDenisNew + " руб.");
+        System.out.println("Новая зарплата Кристины составляет " + salaryKristinaNew + " руб.");
+
+        float salaryMariaYearlyBefore = salaryMaria * 12;
+        float salaryDenisYearlyBefore = salaryDenis * 12;
+        float salaryKristinaYearlyBefore = salaryKristina * 12;
+
+
+        float salaryMariaYearlyNew = salaryMariaNew * 12;
+        float salaryDenisYearlyNew = salaryDenisNew * 12;
+        float salaryKristinaYearlyNew = salaryKristinaNew * 12;
+
+        float yearlySalaryMariaDif = salaryMariaYearlyNew - salaryMariaYearlyBefore;
+        float yearlySalaryDenisDif = salaryDenisYearlyNew - salaryDenisYearlyBefore;
+        float yearlySalaryKristinaDif = salaryKristinaYearlyNew - salaryKristinaYearlyBefore;
+
+        System.out.println("Годовой доход Марии вырос на " + yearlySalaryMariaDif + " рублей");
+        System.out.println("Годовой доход Дениса вырос на " + yearlySalaryDenisDif + " рублей");
+        System.out.println("Годовой доход Кристины вырос на " + yearlySalaryKristinaDif + " рублей");
+
+
     }
 }
