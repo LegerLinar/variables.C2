@@ -147,7 +147,7 @@ public class Main {
         int eggsPortionWeight = eggsWeight * eggsPortion;
         int breakfastWeight = bananaPortionWeight + milkPortionWeight + iceCreamPortionWeight + eggsPortionWeight;
         System.out.println("Вес завтрака в граммах " + breakfastWeight);
-        float kilo = 1000;
+        float kilo = 1000f;
         float breakfastWeightKilo = breakfastWeight / kilo;
         System.out.println("Вес завтрака в килограммах " + breakfastWeightKilo);
 
